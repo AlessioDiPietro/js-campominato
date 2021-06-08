@@ -24,17 +24,23 @@ while (numeriEsplosivi.length < 100){
 console.log(numeriEsplosivi);
 
 
+
 // In seguito deve chiedere all’utente (100 - 16) volte di inserire un numero alla volta, sempre compreso tra 1 e 100. L’utente non può inserire più volte lo stesso numero.
+
 var risposteUtente = [];
 
 
 while (risposteUtente.length < 3 ){
 
     var numeroUtente = parseInt(prompt("numero utente inserire"));
-
-    if (!risposteUtente.includes(numeroUtente)){
+    if (numeroUtente > 100){
+        alert("numero tra 1 e 100 please!")
+    }
+    else if (!risposteUtente.includes(numeroUtente)){
         risposteUtente.push(numeroUtente);
+    }else {
         alert("numero gia inserito. PROVA CON UN ALTRO!")
+        
     }
 }
 console.log(risposteUtente);
