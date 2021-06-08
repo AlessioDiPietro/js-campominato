@@ -11,10 +11,6 @@ function generatoreNumRand (min,max){
 
 // Il computer deve generare 16 numeri casuali tra 1 e 100. I numeri non possono essere duplicati.
 
-
-
-
-
 var numeriEsplosivi = [];
 
 while (numeriEsplosivi.length < 100){
@@ -25,5 +21,20 @@ while (numeriEsplosivi.length < 100){
     }
 }
 
-
 console.log(numeriEsplosivi);
+
+
+// In seguito deve chiedere all’utente (100 - 16) volte di inserire un numero alla volta, sempre compreso tra 1 e 100. L’utente non può inserire più volte lo stesso numero.
+var risposteUtente = [];
+
+
+while (risposteUtente.length < 3 ){
+
+    var numeroUtente = parseInt(prompt("numero utente inserire"));
+
+    if (!risposteUtente.includes(numeroUtente)){
+        risposteUtente.push(numeroUtente);
+        alert("numero gia inserito. PROVA CON UN ALTRO!")
+    }
+}
+console.log(risposteUtente);
