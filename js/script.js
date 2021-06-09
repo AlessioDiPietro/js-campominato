@@ -24,7 +24,7 @@ document.getElementById("scelta-btn").addEventListener("click", function() {
         limiteLevel = 50;
     }
     
-    console.log(difficolta);
+    document.getElementById("difficolta").innerHTML = difficolta;
 
 
     // Il computer deve generare 16 numeri casuali tra 1 e 100. I numeri non possono essere duplicati.
@@ -50,7 +50,7 @@ console.log(numeriEsplosivi);
 
     while (risposteUtente.length < (limiteLevel - 16) && colpito){
         
-        var numeroUtente = parseInt(prompt("numero utente inserire"));
+        var numeroUtente = parseInt(prompt("INSERISCI QUI UN NUMERO COMPRESO TRA 1 E " + limiteLevel));
         
 
         // Se il numero è presente nella lista dei numeri generati, la partita termina, altrimenti si continua chiedendo all’utente un altro numero. La partita termina quando il giocatore inserisce un numero “vietato” o raggiunge il numero massimo possibile di numeri consentiti.
@@ -67,9 +67,12 @@ console.log(numeriEsplosivi);
         }
     }
     console.log(risposteUtente);
+    document.getElementById("risposteutente").innerHTML = risposteUtente;
 
-    var strikewin = risposteUtente.length + 1;
-    alert("IL TUO RISULTATO E': ", strikewin);
+    var strikeWin = risposteUtente.length + 1;
+    document.getElementById("strikewin").innerHTML = strikeWin - 1;
+
+    document.getElementById("nascosto").classList = "d-block";
 });
 
 

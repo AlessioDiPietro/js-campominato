@@ -4,20 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <title>CampoMinato</title>
 </head>
 <body>
+    <main>
+
+        <div class="container-fluid text-center campominato_bgi py-4 position-relative">
+
+            <h1 class="m-4">benvenuto in CampoMinato</h1>
     
+            <section>
+                
+                <label for="level" class="fs-4 my-4 text-warning bg-dark rounded"> Scegli la difficoltà</label>
+                <select name="" id="level" class="form-select text-center" aria-label="Default select example">
+                    <option value="facile" class="text-secondary">-FACILE- una passeggiata di piacere!</option>
+                    <option value="classica" class="text-success">-CLASSICA- fai attenzione potresti trovare delle mine</option>
+                    <option value="veterano" class="text-danger">-VETERANO- se sopravvivi ti consigliamo di arruolarti subito per l'esercito!</option>
+                </select>
+            
+                <button id="scelta-btn" class="btn btn-success mt-5">Pronto? via!</button>
+            </section>
+
+            <!-- risultato -->
+
+            <section id="nascosto" class="d-none" >
+
+                <div class="box rounded risultato_cm_bgi w-100">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="text_blue">&#10037;</th>
+                            <th scope="col" class="text_blue">Difficolt&agrave; scelta</th>
+                            <th scope="col" class="text_blue">Numero di tentativi Riusciti</th>
+                            <th scope="col" class="text_blue">I tuoi numeri</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row my-5" class="text_green">&#10037;</td>
+                            <td id="difficolta" class="text_green"></td>
+                            <td id="strikewin" class="text_green"></td>
+                            <td id="risposteutente" class="text_green"></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
 
-    <label for="level">Scegli la difficoltà :</label>
-    <select name="" id="level">
-        <option value="facile">facile</option>
-        <option value="classica">classica</option>
-        <option value="veterano">veterano</option>
-    </select>
+                </div>
 
-    <button id="scelta-btn">Pronto? VIA!</button>
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- personal js -->
     <script src="js/script.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: lightseagreen;
+}
+
+td {
+    padding: 2rem !important;
+}
+
+/* debug */
+.campominato_bgi{
+    /* height: 60vh; */
+}
+.risultato_cm_bgi{
+    /* height: 300px; */
+}
+
+
+
+/* campo minato */
+
+.campominato_bgi{
+    background-image: url("https://live.staticflickr.com/8477/8219640469_962fd47149_b.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.text_red{
+    
+}
+
+/* risultato campominato */
+.risultato_cm_bgi {
+    background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg");
+    background-size: cover;
+    color: rgb(3, 3, 32);
+    padding: 1.5rem;
+}
+#nascosto {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text_blue {
+    color:darkblue !important;
+}
+.text_green {
+    color: green;
+}
